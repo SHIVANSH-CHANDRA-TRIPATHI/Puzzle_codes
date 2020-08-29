@@ -24,7 +24,7 @@ int det(int n,int *arr)
         dex+=(*(arr+i))*det(n-1,brr);
         else dex-=(*(arr+i))*det(n-1,brr);
         free(brr);
-}
+    }
         return dex;
 }
 
@@ -39,7 +39,7 @@ int main()
     scanf("%d",&n);
     arr = (int*)malloc(n*n*sizeof(int));
 
-printf("Enter the input Matrix:\n");
+ printf("Enter the input Matrix:\n");
     for (i = 0; i <n; i++)
       for (j = 0; j <n; j++)
            scanf("%d",(arr + i*n + j));
