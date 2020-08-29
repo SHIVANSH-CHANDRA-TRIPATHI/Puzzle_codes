@@ -6,8 +6,9 @@ void hundreds(int);
 void thousands(int);
 int n;
 char a[20][10]={"one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"},b[8][10]={"twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"};
-void main()
+int main()
 {
+printf("Enter any Number less than 1 Lakh: ");
 scanf("%d",&n);
 if(n==0)
     printf("zero");
